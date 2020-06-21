@@ -1,8 +1,13 @@
-import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet, Image } from "react-native";
 
-const ImageDetail = () => {
-    return <Text>Show Image of forest</Text>;
+const ImageDetail = (props) => {
+  return (
+    <View>
+        <Image source={require('../../assets/beach.jpg')} />
+      <Text>Show Image of {props.title}</Text>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({});
