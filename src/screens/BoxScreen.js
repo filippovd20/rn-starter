@@ -15,8 +15,10 @@ const styles = StyleSheet.create({
    viewStyle: {
     borderWidth:3,
     borderColor:'black',
+    height: 200,
     alignItems: 'center',
-    
+    flexDirection: 'row',
+    justifyContent: 'space-around'
    },
    textStyle:{
        borderWidth: 3,
