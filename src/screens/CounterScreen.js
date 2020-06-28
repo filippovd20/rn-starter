@@ -6,9 +6,9 @@ const counter_reducer = (counter_state, action) => {
   // action === {type: 'increase' || 'decrease' }
   switch(action.type) {
     case 'increase':
-      return {count: counter_state.count+1};
+      return {...counter_state, count: counter_state.count+1};
     case 'decrease':
-      return {count: counter_state.count-1};
+      return {...counter_state, count: counter_state.count-1};
     default:
       return counter_state;
   }
